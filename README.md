@@ -40,7 +40,7 @@ Things you may want to cover:
 |------|----|-------|
 |name|string|null: false|
 ### Association
-- has_many :user
+- has_many :user,through:groups_users
 - has_many :groups_users
 - has_many :comments
 
@@ -62,7 +62,8 @@ Things you may want to cover:
 |------|----|-------|
 |text|text|
 |image|image|
-|group_user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 ### Association
-- has_many :groups
-- has_many :users
+- belongs_to :groups
+- belongs_to :users
