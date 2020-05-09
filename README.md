@@ -22,12 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-## groups_usersテーブル 
-## userのエンティティがある　id name e-mail pssword
-## groupのエンティティ　　　id name
-## posts 　id comments
-
-
 
 #  DB設計
 ## usersテーブル
