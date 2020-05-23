@@ -1,0 +1,119 @@
+.chat-main {
+  width:  calc(100vw - 300px);
+  height: 100px;
+
+  .chat-main-top{
+     display: flex;
+     margin-top: 35px;
+  
+  .chat-main-top__left-over{
+    padding:0px 0px 0px 40px;
+    font-size: 20px;
+    color: #333333;
+  }
+
+    .chat-main-top__left-under{
+      font-size: 12px;
+      color: #999999;
+      margin-top: 15px;
+    }
+
+  .chat-main-top__right{
+    margin-left:auto;
+    padding:0px 20px 0px 20px;
+    margin-right: 40px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    right: 40px;
+    border: solid 1px #38aef0;
+      a {
+        color: #38aef0;
+        text-decoration: none;
+        }
+   
+    }}
+
+  .chat-main-middle{
+    padding: 46px 40px;
+    background-color: #fafafa;
+    height: calc(100vh - 188px);
+   
+  
+
+  .chat-main-middle__sample{
+    font-size: 16px;
+    color: #333333;
+    display: flex;
+    }
+    .chat-main-middle__name{
+      font-weight: bold;
+    }
+    
+  
+  .chat-main-middle__sample-date{
+      font-size: 12px;
+      color: #999999;
+      margin-left: 10px;
+      
+    }}
+    .chat-main-middle__sample-message{
+      font-size: 14px;
+      color: #434a54;
+      margin-top: 10px;
+    }
+    .chat-main-middle__blank{
+      height: 45px;
+    }
+
+    .chat-main-bottom{
+      height: 90px;
+      width: 100%;
+      background-color: #ddd; 
+      padding: 10px 40px 10px 40px;
+      display:flex;
+      align-items: center;
+    
+
+    .chat-main-bottom__message{
+      position: relative;
+      background-color: white; 
+      height: 50px;
+      width: calc(100vw - 465px);
+      margin-right: 15px;
+
+      .hat-main-bottom__sample{
+        color: #434a54;
+        line-height: 50px;
+        padding-left: 10px;
+      }
+      
+      
+     
+
+    }
+    .chat-main-bottom__attachment{
+      position: absolute;
+      top:10px;
+      right:10px;
+      font-size: 1.4rem;
+
+       input{
+         display: none;
+        }
+     }
+
+  
+
+    .chat-main-bottom__send{
+      height: 50px;
+      width: 100px;
+      font-size: 16px;
+      color: white;
+      background-color: #38aef0;
+      text-align: center;
+      line-height: 50px;
+      
+
+    }}
+}

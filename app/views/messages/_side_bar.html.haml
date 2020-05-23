@@ -1,0 +1,14 @@
+.side-bar
+  .side-bartop
+    .side-bartop__logo
+      %p.side-bartop__username test
+      %ul.side-bartop__menu
+        %li.side-bartop__menu__create
+          = link_to "#" do
+            = icon('fa', 'edit')
+        %li.side-bartop__menu__edit
+          = link_to "#" do
+            = icon('fa','cog')
+  .side-bar-under
+    %p.side-bar-under__group techcamp
+    %p.side-bar-under__messeage まだメッセージがありません
