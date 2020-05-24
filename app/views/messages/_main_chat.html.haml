@@ -1,0 +1,28 @@
+.chat-main
+  .chat-main-top
+    .chat-main-top__left-over
+      test
+      .chat-main-top__left-under
+        MENBER:TEST
+    .chat-main-top__right
+      = link_to "#" do
+        Edit
+
+  .chat-main-middle
+    .chat-main-middle__sample
+      %p.chat-main-middle__name masa
+      .chat-main-middle__sample-date
+        2019/11/20(web)17:43:01
+    .chat-main-middle__sample-message
+      おはよう
+    .chat-main-middle__blank
+
+  .chat-main-bottom
+    .chat-main-bottom__message
+      %p.chat-main-bottom__sample type a massage
+      .chat-main-bottom__attachment
+        %label
+          = icon('fa','image', class: 'test')
+          %input{type: "file"}
+    .chat-main-bottom__send    
+      Send
