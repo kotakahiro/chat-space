@@ -1,28 +1,24 @@
 .chat-main
   .chat-main-top
     .chat-main-top__left-over
-      test
+      = @group.name
       .chat-main-top__left-under
-        MENBER:TEST
+        MENBER:
+        - @group.users.each do |user| 
+          = user.name
+  
     .chat-main-top__right
-      = link_to "#" do
+      = link_to edit_group_path(@group) do
         Edit
 
   .chat-main-middle
-    .chat-main-middle__sample
-      %p.chat-main-middle__name masa
-      .chat-main-middle__sample-date
-        2019/11/20(web)17:43:01
-    .chat-main-middle__sample-message
-      おはよう
-    .chat-main-middle__blank
+    = render @messages
+
 
   .chat-main-bottom
-    .chat-main-bottom__message
-      %p.chat-main-bottom__sample type a massage
-      .chat-main-bottom__attachment
-        %label
-          = icon('fa','image', class: 'test')
-          %input{type: "file"}
-    .chat-main-bottom__send    
-      Send
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      = f.label :image, class: 'form__mask__image' do
+        = icon('fa', 'image', class: 'icon')
+        = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'

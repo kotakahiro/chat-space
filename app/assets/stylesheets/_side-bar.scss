@@ -46,17 +46,28 @@
     padding:20px 20px 40px 20px;
     background-color: #2F3E50;
 
-    .side-bar-under__group{
+    .group{
       padding:0px 0px 5px 0px;
-      font-size: 15px;    
-    }
-    .side-bar-under__messeage{
-      font-size: 11px;
+      font-size: 15px; 
+      a{
+        color: white;
+      }   
+      .group__name{
+
+      }
+
+      .group__message{
+      }
 
     }
+    // .side-bar-under__messeage{
+    //   font-size: 11px;
+
+    // }
 
   }
 
 
 
 }
+
